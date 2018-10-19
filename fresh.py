@@ -56,7 +56,7 @@ def createUser():
             s_client_id = input('Enter your Spotify Client ID: ').strip()
             s_client_secret = input('Enter your Spotify Client Secret: ').strip()
             username = input('Enter your Username: ').strip()
-            playlists = addPlaylists([])
+            playlists = ','.join(addPlaylists([]))
             redirect = input('Enter your Redirect URI: ').strip()
             r_client_id = input('Enter your Reddit Client ID: ').strip()
             r_client_secret = input('Enter your  Reddit Client Secret: ').strip()
